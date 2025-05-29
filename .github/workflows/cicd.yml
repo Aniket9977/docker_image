@@ -28,7 +28,7 @@ jobs:
             pip install -r requirements.txt
 
         - name: Build Docker image
-          run: docker build .--file Dockerfile --tag workflow-test
+          run: docker build . --file Dockerfile --tag workflow-test
 
 
     build-and-test:
