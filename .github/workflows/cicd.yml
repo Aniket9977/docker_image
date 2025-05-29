@@ -30,7 +30,7 @@ jobs:
 
         - name: Run tests
           run: |
-            python -m unittest discover -s tests -p "*.py"
+            pytest
 
     build-and-publish:
         needs: build-and-test
